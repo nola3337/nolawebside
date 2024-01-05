@@ -1,38 +1,65 @@
+.bg-img {
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 5rem 4rem 5rem;
+}
+
+.bg-img--1 {
+  background-image: url(../img/spring-4184594_1920.jpg);
+}
+
+.bg-img--2 {
+  background-image: url(../img/summer-783347_1920.jpg);
+}
+
+.bg-img--3 {
+  background-image: url(../img/cafe-3537801_1920.jpg);
+}
+
+.bg-img--4 {
+  background-image: url(../img/waffle-hearts-2697904_1920.jpg);
+}
+
+.bg-img--5 {
+  background-image: url(../img/hydrangea-3462437_1920.jpg);
+}
+
+.bg-img--6 {
+  background-image: url(../img/cape-may-105590_1920.jpg);
+}
+
+.bg-img--7 {
+  background-image: url(../img/seashells-1337565_1920.jpg);
+}
+
+.bg-img--8 {
+  background-image: url(../img/watermelon-2144111_1920.jpg);
+}
+
+.bg-img--9 {
+  background-image: url(../img/fireworks-1880045_1920.jpg);
+}
+
+.bg-img--10 {
+  background-image: url(../img/ocean-3605547_1920.jpg);
+}
+
+.bg-img--11 {
+  background-image: url(../img/maple-leaves-2789234_1920.jpg);
+}
+
+.bg-img--12 {
+  background-image: url(../img/christmas-4646421_1920.jpg);
+}
+
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  /* margin: 4rem 5rem 4rem 5rem; */
+  gap: 5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
 }

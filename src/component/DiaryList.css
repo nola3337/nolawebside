@@ -1,0 +1,34 @@
+.diary-list-box {
+  font-size: 2rem;
+  color: rgb(124, 124, 124);
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 5rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.diary-list {
+  list-style: none;
+  margin: 4rem;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.086);
+}
+
+.diary-list-btn {
+  border: none;
+  font-size: 1.5rem;
+  color: #666;
+  background-color: rgba(245, 254, 254, 0.808);
+  padding: 1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.diary-list-btn:hover,
+.diary-list-btn:active {
+  background-color: rgba(228, 255, 255, 0.808);
+}
