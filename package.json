@@ -1,6 +1,7 @@
 {
   "name": "calender",
   "version": "0.1.0",
+  "homepage": "https://nola3337.github.io/nolawebside/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
@@ -16,7 +17,6 @@
     "redux": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://nola3337.github.io/nolawebside/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
