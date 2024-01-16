@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/nolawebside/static/css/main.1a493b70.css",
+    "main.js": "/nolawebside/static/js/main.74736bf5.js",
+    "static/media/notebook-1840276_1920.webp": "/nolawebside/static/media/notebook-1840276_1920.5c1284a343433b3dea6e.webp",
+    "index.html": "/nolawebside/index.html",
+    "main.1a493b70.css.map": "/nolawebside/static/css/main.1a493b70.css.map",
+    "main.74736bf5.js.map": "/nolawebside/static/js/main.74736bf5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a493b70.css",
+    "static/js/main.74736bf5.js"
+  ]
+}
