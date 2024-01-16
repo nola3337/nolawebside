@@ -1,65 +1,38 @@
-.bg-img {
+.hero-bg-img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.746)
+    ),
+    url("../img/notebook-1840276_1920.webp");
   background-size: cover;
   background-position: center;
-  padding: 4rem 5rem 4rem 5rem;
+  min-height: 100vh;
 }
 
-.bg-img--1 {
-  background-image: url(../img/spring-4184594_1920.jpg);
+.diary-section {
+  margin: 0 auto;
+  padding: 10rem 0;
+  width: 80rem;
 }
 
-.bg-img--2 {
-  background-image: url(../img/summer-783347_1920.jpg);
-}
-
-.bg-img--3 {
-  background-image: url(../img/cafe-3537801_1920.jpg);
-}
-
-.bg-img--4 {
-  background-image: url(../img/waffle-hearts-2697904_1920.jpg);
-}
-
-.bg-img--5 {
-  background-image: url(../img/hydrangea-3462437_1920.jpg);
-}
-
-.bg-img--6 {
-  background-image: url(../img/cape-may-105590_1920.jpg);
-}
-
-.bg-img--7 {
-  background-image: url(../img/seashells-1337565_1920.jpg);
-}
-
-.bg-img--8 {
-  background-image: url(../img/watermelon-2144111_1920.jpg);
-}
-
-.bg-img--9 {
-  background-image: url(../img/fireworks-1880045_1920.jpg);
-}
-
-.bg-img--10 {
-  background-image: url(../img/ocean-3605547_1920.jpg);
-}
-
-.bg-img--11 {
-  background-image: url(../img/maple-leaves-2789234_1920.jpg);
-}
-
-.bg-img--12 {
-  background-image: url(../img/christmas-4646421_1920.jpg);
-}
-
-.App {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  /* margin: 4rem 5rem 4rem 5rem; */
-  gap: 5rem;
+@keyframes slide-up-fade-in {
+  0% {
+    transform: translateY(30rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .main-h2 {
   font-size: 2rem;
   margin-bottom: 3rem;
+}
+
+.calender-section {
+  margin: 4rem auto;
+  width: 80rem;
 }

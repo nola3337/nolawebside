@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = { selectedPage: "newDiary" };
+const initialState = { selectedPage: "home", toggleMenu: false };
 
 const menuSelectSlice = createSlice({
   name: "menuSelect",
@@ -8,6 +8,9 @@ const menuSelectSlice = createSlice({
   reducers: {
     selectPage(state, action) {
       state.selectedPage = action.payload;
+    },
+    toggleMenu(state) {
+      state.toggleMenu = !state.toggleMenu;
     },
   },
 });

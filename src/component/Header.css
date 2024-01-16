@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: black;
+  color: #ffffff;
+  height: 6rem;
+}
+
+.header-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header-icon {
+  width: 24px;
+  stroke: #ffffff;
+}
+
+.header-icon:hover,
+.header-icon:active {
+  stroke: #c5c5c5;
+}
+
+.project-name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-name img {
+  width: 24px;
+  margin-top: 0.5rem;
+}

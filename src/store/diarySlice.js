@@ -58,6 +58,9 @@ const diarySlice = createSlice({
       state.diary[currentIndex].content = action.payload.content;
       state.diary[currentIndex].isEdit = false;
     },
+    replaceData(state, action) {
+      state.diary = action.payload;
+    },
   },
 });
 

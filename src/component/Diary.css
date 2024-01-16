@@ -5,6 +5,7 @@
   padding: 5rem;
   border-radius: 5px;
   width: 100%;
+  animation: slide-up-fade-in 0.5s ease-in;
 }
 
 .diary-date {

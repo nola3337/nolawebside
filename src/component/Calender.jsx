@@ -1,32 +1,28 @@
 import css from "./Calender.css";
 import CalendarDays from "./calendar-days";
-import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { calenderActions } from "../store/calenderSlice";
 
 export default function Calender() {
-  const [date, setDate] = useState(new Date());
+  const dispatch = useDispatch();
+  const date = useSelector((state) => state.calender);
+
+  console.log(date.getMonth() + 1);
 
   function nextMonthHandler() {
-    setDate(
-      (prevDate) => new Date(prevDate.getFullYear(), prevDate.getMonth() + 1)
-    );
+    dispatch(calenderActions.nextMonth());
   }
 
   function lastMonthHandler() {
-    setDate(
-      (prevDate) => new Date(prevDate.getFullYear(), prevDate.getMonth() - 1)
-    );
+    dispatch(calenderActions.lastMonth());
   }
 
   function nextYearHandler() {
-    setDate(
-      (prevDate) => new Date(prevDate.getFullYear() + 1, prevDate.getMonth())
-    );
+    dispatch(calenderActions.nextYear());
   }
 
   function lastYearHandler() {
-    setDate(
-      (prevDate) => new Date(prevDate.getFullYear() - 1, prevDate.getMonth())
-    );
+    dispatch(calenderActions.lastYear());
   }
 
   return (
@@ -114,7 +110,7 @@ export default function Calender() {
           <span>六</span>
         </div>
         <div className="calender-day">
-          <CalendarDays currentDay={date} />
+          <CalendarDays />
         </div>
       </div>
     </div>

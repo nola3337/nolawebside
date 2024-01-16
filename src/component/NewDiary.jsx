@@ -19,7 +19,6 @@ export default function NewDiary() {
     const haveSameday = diaryList.find((item) => item.date === data.date);
 
     if (editData) {
-      console.log(data);
       dispatch(diaryActions.editDiary(data));
     } else if (haveSameday) {
       window.confirm("同一天已有日記。");

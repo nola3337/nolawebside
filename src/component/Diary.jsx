@@ -10,7 +10,14 @@ export default function Diary() {
   const currentDiary = diaryList.find((item) => item.selected === true);
 
   function handleDelete() {
-    dispatch(diaryActions.deleteDiary(currentDiary.id));
+    const shouldDelete = window.confirm("確定要刪除日記嗎？");
+
+    if (shouldDelete) {
+      // 執行刪除操作
+      dispatch(diaryActions.deleteDiary(currentDiary.id));
+    } else {
+      return;
+    }
 
     dispatch(menuSelectActions.selectPage("diaryList"));
   }

@@ -1,6 +1,9 @@
 import Day from "./Day";
+import { useSelector } from "react-redux";
 
-export default function CalendarDays({ currentDay }) {
+export default function CalendarDays() {
+  const currentDay = useSelector((state) => state.calender);
+
   let firstDayOfMonth = new Date(
     currentDay.getFullYear(),
     currentDay.getMonth(),
